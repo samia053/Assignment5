@@ -4,8 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+  
 </head>
-<body>
+<body class="bg-slate-50">
     
+    <main class="">
+      <!-- navbar section -->
+  <section class="mb-2 flex justify-around sticky top-0 z-50  bg-white" >
+    <!-- button -->
+    <div>
+      <button class="mt-2 btn btn-outline btn-success">Blog</button>
+
+    </div>
+    <!-- title section -->
+     <div class="flex">
+
+      <img class="p-4" src="assets/logo.png" alt="">
+      <h3 class="text-xl pt-4 text-black font-semibold">Donate Bangladesh</h3>
+
+     </div>
+
+     <!-- current balance section -->
+      <div class="flex ">
+        <img class="p-4 " src="assets/coin.png" alt="">
+        <h3 class="text-gray-600 font-medium text-base py-3"><span id="current-amount">6000</span>BDT</h3>
+
+      </div>
+
+  </section>
+
+  <!-- button section -->
+
+  <div class="divider"></div>
+
+  <div class="flex justify-center space-x-2 mb-2">
+    <button id="btn-donate" class="btn btn-outline btn-success">Donate</button>
+    <button id="btn-history" class="btn btn-outline btn-success">History</button>
+
+  </div>
+
+  <div class="divider"></div>
+<!-- donation section -->
+  <!-- card section -->
+    <section id="donation" class=" relative">
+      <!-- first card -->
+      <div class="hero bg-base-200 ">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+         
+          <div>
+            <div class="flex space-x-2">
+              <img src="assets/coin.png" alt="">
+              <p><span id="donatedMoney1">600</span>BDT</p>
+            </div>
+            <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+            <p class="py-6">
+              The recent floods in Noakhali have caused significant damage to homes  
+              infrastructure. Your donation will help provide essential supplies and
+                to those affected by this disaster. Every contribution, big or small, 
+                makes  difference. Please join us in supporting the relief
+               efforts and making a positive impact on the lives of those in need.
+            </p>
+            <input id="first-input" type="text" placeholder="Enter Amount" class="mr-5 input input-bordered w-full max-w-xs" />
+
+            <!-- <button id="first-btn" class=" btn btn-primary">Donate Now</button> -->
+
+            <button id="first-btn" class="btn">Donate Now</button>
+            <dialog id="my_modal_3" class="modal">
+              <div class="modal-box bg-white">
+                <h3 class="text-lg font-bold">Congrates</h3>
+                <img src="assets/coin.png" alt="">
+                <p class="py-4">You have contributed for the Mankind</p>
+                <h2 class="text-lg font-bold">Successfully</h2>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close Confirmation</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <img
+          src="assets/noakhali.png"
+          class="max-w-sm rounded-lg shadow-2xl" />
+        </div>
+      </div>
+
+      <!-- 2nd card -->
+      <div class="hero bg-base-200 ">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+         
+          <div>
+            <div class="flex space-x-2">
+              <img src="assets/coin.png" alt="">
+              <p><span id="donatedMoney2">600</span>BDT</p>
+            </div>
+            <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+            <p class="py-6">
+              The recent floods in Feni have devastated local communities, leading to 
+              severe disruption and loss. Your generous donation will help provide 
+              immediate aid, including food, clean water, and medical supplies, to 
+              those affected by this calamity. Together, we can offer crucial support
+               and help rebuild lives in the aftermath of this disaster. Every contribution 
+               counts towards making a real difference. Please consider donating today to 
+               assist those in urgent need.
+            </p>
+            <input id="second-input" type="text" placeholder="Enter Amount" class="mr-5 input input-bordered w-full max-w-xs" />
+
+            <!-- <button id="second-btn" class=" btn btn-primary">Donate Now</button> -->
+            <button id="second-btn" class="btn">Donate Now</button>
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box bg-white">
+                <h3 class="text-lg font-bold">Congrates</h3>
+                <img src="assets/coin.png" alt="">
+                <p class="py-4">You have contributed for the Mankind</p>
+                <h2 class="text-lg font-bold">Successfully</h2>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close Confirmation</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <img
+          src="assets/feni.png"
+          class="max-w-sm rounded-lg shadow-2xl" />
+        </div>
+      </div>
+
+      <!-- 3rd card -->
+      <div class="hero bg-base-200 ">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+         
+          <div>
+            <div class="flex space-x-2">
+              <img src="assets/coin.png" alt="">
+              <p><span id="donatedMoney3">600</span>BDT</p>
+            </div>
+            <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+            <p class="py-6">
+              The recent Quota movement has resulted in numerous injuries and significant hardship 
+              for many individuals. Your support is crucial in providing medical assistance, 
+              rehabilitation, and necessary supplies to those affected. By contributing, 
+              you help ensure that injured individuals receive the care and support they
+               need during this challenging time. Every donation plays a vital role in 
+               alleviating their suffering and aiding in their recovery. Please consider
+                making a donation to support these brave individuals in their time of need.
+            </p>
+            <input id="third-input" type="text" placeholder="Enter Amount" class="mr-5 input input-bordered w-full max-w-xs" />
+
+            <!-- <button id="third-btn" class=" btn btn-primary">Donate Now</button> -->
+            <button id="third-btn" class="btn">Donate Now</button>
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box bg-white">
+                <h3 class="text-lg font-bold">Congrates</h3>
+                <img src="assets/coin.png" alt="">
+                <p class="py-4">You have contributed for the Mankind</p>
+                <h2 class="text-lg font-bold">Successfully</h2>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close Confirmation</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <img
+          src="assets/quota-protest.png"
+          class="max-w-sm rounded-lg shadow-2xl" />
+        </div>
+      </div>
+
+       
+      
+    </section>
+
+    <!-- history section -->
+
+    <section id="history" class="hidden relative">
+      <div>
+        <h3>History part</h3>
+      </div>
+    </section>
+
+
+   
+
+    </main>
+
+    <script src="javascript/feature.js"></script>
+    <script src="javascript/Noakhali.js"></script>
+    <script src="javascript/feni.js"></script>
+    <script src="javascript/qouta.js"></script>
+    <script src="javascript/utility.js"></script>
 </body>
 </html>
